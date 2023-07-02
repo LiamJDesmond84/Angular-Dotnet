@@ -8,6 +8,7 @@ export class SuperHeroService {
 
   constructor() { }
 
+  // Mock Data for now
   public getSuperHeroes() : SuperHero [] {
     let hero = new SuperHero();
 
