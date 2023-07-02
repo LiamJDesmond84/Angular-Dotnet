@@ -11,11 +11,11 @@ export class SuperHeroService {
   public getSuperHeroes() : SuperHero [] {
     let hero = new SuperHero();
 
-    hero.id
-    hero.firstName
-    hero.lastName
-    hero.name
-    hero.place
+    hero.id = 1;
+    hero.name = "Spider Man";
+    hero.firstName = "Peter";
+    hero.lastName = "Parker";
+    hero.place = "New York City";
 
     return [hero];
   }
