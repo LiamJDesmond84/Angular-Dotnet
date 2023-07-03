@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
 import { SuperHero } from '../models/super-hero';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SuperHeroService {
 
-  constructor() { }
+  url: string = "SuperHero";
+
+  constructor(private http: HttpClient) { }
 
   // Mock Data for now
   public getSuperHeroes() : SuperHero [] {
