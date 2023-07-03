@@ -7,5 +7,19 @@ namespace SuperHeroAPI.Controllers
     [ApiController]
     public class SuperHeroController : ControllerBase
     {
+
+        public async Task<ActionResult<List<SuperHero>>> getSuperHeroes()
+        {
+
+            return new List<SuperHero> {
+                new SuperHero
+                {
+                    Name = "Spider Man",
+                    FirstName = "Peter",
+                    LastName = "Parker",
+                    Place = "New York City"
+                } 
+            };
+        }
     }
 }
