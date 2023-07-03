@@ -19,6 +19,6 @@ export class SuperHeroService {
 
 
 
-    return this.http.get<SuperHero[]>(`${environment.apiUrl}`);
+    return this.http.get<SuperHero[]>(`${environment.apiUrl}/${this.url}`);
   }
 }
