@@ -17,9 +17,7 @@ export class AppComponent {
   ngOnInit(): void {
     // this.superHeroService.getSuperHeroes().subscribe((x: SuperHero[]) => this.heroes = x);
     this.superHeroService.getSuperHeroes().subscribe({
-      next: albums =>{
-        this.heroes=albums
-      }
+      next: x => { this.heroes = x }
     })
     console.log(this.heroes);
   }
