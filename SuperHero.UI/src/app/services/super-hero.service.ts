@@ -15,10 +15,10 @@ export class SuperHeroService {
 
   // Mock Data for now
   public getSuperHeroes() : Observable<SuperHero []> {
-    let hero = new SuperHero();
+    // let hero = new SuperHero();
 
 
-
+    // ${environment.apiURL} is the Dotnet Web API
     return this.http.get<SuperHero[]>(`${environment.apiUrl}/${this.url}`);
   }
 }
