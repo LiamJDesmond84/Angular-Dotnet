@@ -9,5 +9,7 @@ namespace SuperHeroAPI.Data
 
         // Adds the SuperHeros table to the SQLServer DB
         public DbSet<SuperHero> SuperHeroes { get; set; }
+
+        //public DbSet<SuperHero> SuperHeroes => Set<SuperHero>();
     }
 }
