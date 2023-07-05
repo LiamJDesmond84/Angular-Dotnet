@@ -1,6 +1,8 @@
-﻿namespace SuperHeroAPI.Data
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace SuperHeroAPI.Data
 {
-    public class DataContext
+    public class DataContext : DbContext
     {
     }
 }
