@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "g6cA4M1VQS/B+pkIPxcLLPEX843GHiTHYOpeWUz1sfrqnR6KAs51lRc2cQYoR9x2AQ6lWo8Cn4t2fJjj3U+FCg==",
+  "dgSpecHash": "gyGMm+8qwgIhBW72dGt52nk2c00LCps2yHwRVn2DjvYCqT5m1uCa0Ei2iCa4BtejQoahmIzbTiRmpbd+AXSolQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\liamj\\Documents\\GitRepos\\Angular-Dotnet\\SuperHeroAPI\\SuperHeroAPI\\SuperHeroAPI.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\liamj\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.8\\microsoft.entityframeworkcore.design.7.0.8.nupkg.sha512",
     "C:\\Users\\liamj\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.8\\microsoft.entityframeworkcore.relational.7.0.8.nupkg.sha512",
     "C:\\Users\\liamj\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.8\\microsoft.entityframeworkcore.sqlserver.7.0.8.nupkg.sha512",
+    "C:\\Users\\liamj\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.8\\microsoft.entityframeworkcore.tools.7.0.8.nupkg.sha512",
     "C:\\Users\\liamj\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\liamj\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\liamj\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
