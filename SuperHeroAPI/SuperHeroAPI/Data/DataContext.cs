@@ -6,5 +6,8 @@ namespace SuperHeroAPI.Data
     {
 
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
+
+        // Adds the SuperHeros table to the SQLServer DB
+        public DbSet<SuperHero> SuperHeroes { get; set; }
     }
 }
