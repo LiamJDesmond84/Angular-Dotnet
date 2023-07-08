@@ -28,6 +28,10 @@ namespace SuperHeroAPI.Controllers
         [HttpPost]
         public async Task<List<SuperHero>>> CreateSuperHero(SuperHero newSuperHero)
         {
+            _context.SuperHeroes.Add(newSuperHero);
+            await _context.SaveChangesAsync();
+
+            return Ok(await _context.SuperHeroes.ToListAsync());
 
         }
     }
