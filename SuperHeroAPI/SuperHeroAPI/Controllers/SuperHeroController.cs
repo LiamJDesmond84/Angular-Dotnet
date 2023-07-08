@@ -26,7 +26,7 @@ namespace SuperHeroAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<List<SuperHero>>> CreateSuperHero(SuperHero newSuperHero)
+        public async Task<ActionResult<List<SuperHero>>> CreateSuperHero(SuperHero newSuperHero)
         {
             _context.SuperHeroes.Add(newSuperHero);
             await _context.SaveChangesAsync();
