@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SuperHeroAPI.Data;
 
 namespace SuperHeroAPI.Controllers
 {
@@ -7,6 +8,14 @@ namespace SuperHeroAPI.Controllers
     [ApiController]
     public class SuperHeroController : ControllerBase
     {
+
+        private readonly DataContext _context;
+
+        public SuperHeroController(DataContext context)
+        {
+            _context = context;
+        }
+
 
         [HttpGet]
         public async Task<ActionResult<List<SuperHero>>> getSuperHeroes()
