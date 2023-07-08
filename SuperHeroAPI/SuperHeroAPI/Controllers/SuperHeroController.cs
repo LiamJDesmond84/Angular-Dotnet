@@ -24,5 +24,11 @@ namespace SuperHeroAPI.Controllers
 
             return Ok(await _context.SuperHeroes.ToListAsync());
         }
+
+        [HttpPost]
+        public async Task<List<SuperHero>>> CreateSuperHero(SuperHero newSuperHero)
+        {
+
+        }
     }
 }
