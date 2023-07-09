@@ -56,11 +56,11 @@ namespace SuperHeroAPI.Controllers
 
         }
 
-        [HttpDelete]
-        public async Task<ActionResult<List<SuperHero>>> DeleteSuperHero(SuperHero hero)
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<List<SuperHero>>> DeleteSuperHero(int id)
         {
 
-            var dbHero = await _context.SuperHeroes.FindAsync(hero.Id);
+            var dbHero = await _context.SuperHeroes.FindAsync(id);
 
             if (dbHero == null)
             {
@@ -69,7 +69,7 @@ namespace SuperHeroAPI.Controllers
 
             else
             {
-                _context.SuperHeroes.Remove(hero);
+                _context.SuperHeroes.Remove(dbHero);
                 await _context.SaveChangesAsync();
 
 
