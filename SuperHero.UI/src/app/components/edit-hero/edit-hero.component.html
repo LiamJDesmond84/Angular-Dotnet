@@ -2,8 +2,20 @@
 
     <h2>{{ hero.name }}</h2>
     <div>
-        Name:
-        <input type="text" placeholder="Name" [(ngModel)]="hero.name" />
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Name" [(ngModel)]="hero.name" />
+    </div>
+    <div>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" placeholder="Name" [(ngModel)]="hero.name" />
+    </div>
+    <div>
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" placeholder="Name" [(ngModel)]="hero.name" />
+    </div>
+    <div>
+        <label for="place">Place</label>
+        <input type="text" name="place" placeholder="Name" [(ngModel)]="hero.name" />
     </div>
 
 </div>
