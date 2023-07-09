@@ -18,15 +18,20 @@ export class EditHeroComponent implements OnInit{
     
   }
 
+  
+  createHero(hero: SuperHero){
+    return this.heroService.createSuperHero(hero)
+    .subscribe((heroes: SuperHero[]) => this.heroesUpdated.emit(heroes));
+  }
+
   updateHero(hero: SuperHero){
-    return this.heroService.editSuperHero(hero);
+    return this.heroService.editSuperHero(hero)
+    .subscribe((heroes: SuperHero[]) => this.heroesUpdated.emit(heroes));
   }
 
   deleteHero(hero: SuperHero){
-    
+    return this.heroService.deleteSuperHero(hero)
+    .subscribe((heroes: SuperHero[]) => this.heroesUpdated.emit(heroes));
   }
 
-  createHero(hero: SuperHero){
-    
-  }
 }
