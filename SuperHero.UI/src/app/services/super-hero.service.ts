@@ -22,14 +22,16 @@ export class SuperHeroService {
     return this.http.get<SuperHero[]>(`${environment.apiUrl}/${this.url}`);
   }
 
-  public createSuperHero() : Observable<SuperHero []> {
+  public createSuperHero(hero: SuperHero) : Observable<SuperHero []> {
 
-    return this.http.get<SuperHero[]>(`${environment.apiUrl}/${this.url}`);
+    return this.http.post<SuperHero[]>(`${environment.apiUrl}/${this.url}`, hero);
   }
 
-  public editSuperHero() : Observable<SuperHero []> {
+  public editSuperHero(hero: SuperHero) : Observable<SuperHero []> {
 
-    return this.http.get<SuperHero[]>(`${environment.apiUrl}/${this.url}`);
+    return this.http.put<SuperHero[]>(
+      `${environment.apiUrl}/${this.url}`, hero
+      );
   }
 
   public deleteSuperHero() : Observable<SuperHero []> {
