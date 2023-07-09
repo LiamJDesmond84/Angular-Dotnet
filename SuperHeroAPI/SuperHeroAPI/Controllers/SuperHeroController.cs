@@ -49,6 +49,9 @@ namespace SuperHeroAPI.Controllers
                 dbHero.FirstName = superHero.FirstName;
                 dbHero.LastName = superHero.LastName;
                 dbHero.Place = superHero.Place;
+
+                await _context.SaveChangesAsync();
+                return Ok(await _context.SuperHeroes.ToListAsync());
             }
 
         }
