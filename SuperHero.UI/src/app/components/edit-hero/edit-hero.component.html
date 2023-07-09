@@ -7,15 +7,15 @@
     </div>
     <div>
         <label for="firstName">First Name</label>
-        <input type="text" name="firstName" placeholder="First Name" [(ngModel)]="hero.name" />
+        <input type="text" name="firstName" placeholder="First Name" [(ngModel)]="hero.firstName" />
     </div>
     <div>
         <label for="lastName">Last Name</label>
-        <input type="text" name="lastName" placeholder="Last Name" [(ngModel)]="hero.name" />
+        <input type="text" name="lastName" placeholder="Last Name" [(ngModel)]="hero.lastName" />
     </div>
     <div>
         <label for="place">Place</label>
-        <input type="text" name="place" placeholder="Place" [(ngModel)]="hero.name" />
+        <input type="text" name="place" placeholder="Place" [(ngModel)]="hero.place" />
     </div>
     <button *ngIf="hero.id" (click)="updateHero(hero)">Update</button>
     <button *ngIf="hero.id" (click)="deleteHero(hero)">Delete</button>
