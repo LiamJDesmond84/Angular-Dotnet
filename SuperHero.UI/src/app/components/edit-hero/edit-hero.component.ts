@@ -24,7 +24,7 @@ export class EditHeroComponent implements OnInit{
     
   }
 
-  updateHero(hero: SuperHero){
+  createHero(hero: SuperHero){
     
   }
 }
