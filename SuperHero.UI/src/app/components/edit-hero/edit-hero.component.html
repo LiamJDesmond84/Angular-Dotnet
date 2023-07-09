@@ -3,19 +3,19 @@
     <h2>{{ hero.name }}</h2>
     <div>
         <label for="name">Name</label>
-        <input type="text" name="name" placeholder="Name" [(ngModel)]="hero.name" />
+        <input type="text" name="name" [(ngModel)]="hero.name" />
     </div>
     <div>
         <label for="firstName">First Name</label>
-        <input type="text" name="firstName" placeholder="First Name" [(ngModel)]="hero.firstName" />
+        <input type="text" name="firstName" [(ngModel)]="hero.firstName" />
     </div>
     <div>
         <label for="lastName">Last Name</label>
-        <input type="text" name="lastName" placeholder="Last Name" [(ngModel)]="hero.lastName" />
+        <input type="text" name="lastName" [(ngModel)]="hero.lastName" />
     </div>
     <div>
         <label for="place">Place</label>
-        <input type="text" name="place" placeholder="Place" [(ngModel)]="hero.place" />
+        <input type="text" name="place" [(ngModel)]="hero.place" />
     </div>
     <button *ngIf="hero.id" (click)="updateHero(hero)">Update</button>
     <button *ngIf="hero.id" (click)="deleteHero(hero)">Delete</button>

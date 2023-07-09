@@ -21,4 +21,19 @@ export class SuperHeroService {
     // ${environment.apiURL} is the Dotnet Web API
     return this.http.get<SuperHero[]>(`${environment.apiUrl}/${this.url}`);
   }
+
+  public createSuperHero() : Observable<SuperHero []> {
+
+    return this.http.get<SuperHero[]>(`${environment.apiUrl}/${this.url}`);
+  }
+
+  public editSuperHero() : Observable<SuperHero []> {
+
+    return this.http.get<SuperHero[]>(`${environment.apiUrl}/${this.url}`);
+  }
+
+  public deleteSuperHero() : Observable<SuperHero []> {
+
+    return this.http.get<SuperHero[]>(`${environment.apiUrl}/${this.url}`);
+  }
 }
