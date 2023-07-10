@@ -22,6 +22,9 @@ export class AppComponent {
     console.log(this.heroes);
   }
 
+  updateHeroList(heroes: SuperHero[]){
+    this.heroes = heroes;
+  }
 
   initNewHero(){
     this.heroToEdit = new SuperHero();
